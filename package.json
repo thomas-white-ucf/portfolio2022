@@ -1,0 +1,29 @@
+{
+  "name": "portfolio2022",
+  "version": "1.0.0",
+  "description": "development portfolio and resume of thomas white",
+  "main": "src",
+  "repository": "git@github.com:thomas-white-ucf/portfolio2022.git",
+  "author": "Thomas White <thomas.white.ucf@gmail.com>",
+  "license": "The Unlicense",
+  "private": false,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build-debug": "react-scripts build --debug",
+    "build-p": "react-scripts build --profile",
+    "lint": "react-scripts lint",
+    "check": "npx npm-check",
+    "check-u": "npx npm-check --update",
+    "check-skip": "npx npm-check --skip-unused",
+    "test": "echo \"Error: >> no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.5.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0"
+  }
+}
