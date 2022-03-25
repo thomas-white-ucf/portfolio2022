@@ -1,2 +1,9 @@
 node_modules
 .vscode
+.DS_STORE
+build/
+.module-cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json

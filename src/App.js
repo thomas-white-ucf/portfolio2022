@@ -1,6 +1,6 @@
 import React from "react";
 // , { useState, useEffect }
-import "./App.css";
+// import "./App.css";
 
 
 const App = () => {
