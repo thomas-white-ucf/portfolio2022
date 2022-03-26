@@ -1,13 +1,12 @@
 import React from "react";
+import LandingComponent from "./LandingComponent";
 // , { useState, useEffect }
 // import "./App.css";
 
-
 const App = () => {
-
   return (
     <div className="app">
-      <h1>Thomas Resume</h1>
+      <LandingComponent />
     </div>
   );
 };
