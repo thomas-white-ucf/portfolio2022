@@ -1,15 +1,18 @@
 {
   "name": "portfolio2022",
-  "version": "1.0.0",
-  "description": "development portfolio and resume of thomas white",
+  "homepage": "https://thomas-white-ucf.github.io/portfolio2022/",
+  "author": "Thomas White <thomas.white.ucf@gmail.com>",
+  "description": "development portfolio",
   "main": "src",
   "repository": "git@github.com:thomas-white-ucf/portfolio2022.git",
-  "author": "Thomas White <thomas.white.ucf@gmail.com>",
   "license": "The Unlicense",
+  "version": "1.0.0",
   "private": false,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "build-debug": "react-scripts build --debug",
     "build-p": "react-scripts build --profile",
     "lint": "react-scripts lint",
@@ -40,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

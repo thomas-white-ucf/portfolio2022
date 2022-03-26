@@ -1,9 +1,12 @@
-node_modules
 .vscode
 .DS_STORE
+node_modules
+package-lock.json
+
 build/
+
 .module-cache
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-package-lock.json
