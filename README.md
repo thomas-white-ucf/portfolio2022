@@ -1,2 +1,1 @@
-# Portfolio
-## Thomas White
+# Development Portfolio - Thomas White
