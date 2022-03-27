@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // ======
 import {
   AppBar,
@@ -76,7 +76,7 @@ const Header = () => {
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
           >
-            Thomas James White
+            Thomas White
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -132,7 +132,7 @@ const Header = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
-            Thomas James White
+            Thomas White
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Links />
@@ -155,7 +155,7 @@ const Header = () => {
                 sx={{ p: 1, backgroundColor: "white" }}
               >
                 {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" /> */}
-                <Typography>Connect</Typography>
+                <Typography variant="subtitle2">Connect</Typography>
               </IconButton>
             </Tooltip>
             <Menu

@@ -1,12 +1,10 @@
 import { Header, Footer } from "./index";
-//
-
 import { Grid } from "@mui/material";
-//
-
 import whiteWaveImage from "../../assets/images/white-waves.png";
 
 const Layout = ({ children }) => {
+  //
+
   return (
     <main role="main">
       <Grid container>
@@ -22,7 +20,7 @@ const Layout = ({ children }) => {
           }}
         >
           {/* //! MAIN CONTENT 
-                //!> Below - ONLY FOOTER is Outside this Grid Item */}
+                //!> keep FOOTER is Outside this Grid Item */}
           <Grid
             item
             style={{
@@ -33,7 +31,7 @@ const Layout = ({ children }) => {
             }}
           >
             {/* //! - MAIN - - - - - */}
-            <Grid container>
+            <Grid container mb={10}>
               {/* //! - HEADER - - - - */}
               <Grid item xs={12} mb={10}>
                 <Header />

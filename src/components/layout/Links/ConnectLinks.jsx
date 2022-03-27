@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
 
 const ConnectLinks = () => {
@@ -11,11 +11,11 @@ const ConnectLinks = () => {
           px: 1,
           border: 2,
           borderRadius: 2,
-          borderColor: "background.default",
+          borderColor: "whitesmoke",
         }}
       >
         {/* <Link href="/contact" passHref>
-          <Typography variant="subtitle2" color="background.default">
+          <Typography variant="subtitle2" color="whitesmoke">
             Contact
           </Typography>
         </Link> */}
@@ -34,7 +34,7 @@ const ConnectLinks = () => {
           px: 1,
           border: 2,
           borderRadius: 2,
-          borderColor: "background.default",
+          borderColor: "whitesmoke",
         }}
       >
         <a
