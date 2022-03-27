@@ -16,13 +16,13 @@ const Footer = () => {
       >
         <Typography variant="body2">
           <Link color="inherit" href="mailto:thomas.white.ucf@gmail.com">
-            {/* <a href="mailto:thomas.white.ucf@gmail.com">
+            <Typography href="mailto:thomas.white.ucf@gmail.com">
               Thomas.white.ucf@gmail.com
-            </a> */}{" "}
+            </Typography>{" "}
+            {"Copyright © "}
+            {new Date().getFullYear()}
+            {"."}
           </Link>{" "}
-          {"Copyright © "}
-          {new Date().getFullYear()}
-          {"."}
         </Typography>
       </Box>
     </>

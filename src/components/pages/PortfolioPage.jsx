@@ -6,10 +6,13 @@ import sunTrain from "../../assets/images/train.jpg";
 import liriPic from "../../assets/images/liri.png";
 import marvelPic from "../../assets/images/ReactMarvel.png";
 import workoutPic from "../../assets/images/workout.jpeg";
-// import  from "../../"
-// import  from "../../"
+// 
 
-const ProjectDisplayPage = () => {
+
+const PortfolioPage = () => {
+  //
+
+
   return (
     <>
       <div>
@@ -130,4 +133,4 @@ const ProjectDisplayPage = () => {
   );
 };
 
-export default ProjectDisplayPage;
+export default PortfolioPage;

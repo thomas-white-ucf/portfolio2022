@@ -1,10 +1,48 @@
-import React from "react";
-import { AppBar, Grid, Toolbar } from "@mui/material";
+import * as React from "react";
 import { Link } from "react-router-dom";
-// import Typography from "@mui/material/Typography";
-// import Box from "@mui/material/Box";
+// ======
+import {
+  AppBar,
+  Toolbar,
+  IconButton,
+  Menu,
+  Typography,
+  Box,
+} from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
+import MenuItem from "@mui/material/MenuItem";
+// import Avatar from "@mui/material/Avatar";
+import MenuIcon from "@mui/icons-material/Menu";
+
+import Links from "./Links/Links";
+import ConnectLinks from "./Links/ConnectLinks";
+
+// const pages = ["Home", "Projects", "Resume"];
+// const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Header = () => {
+  //
+
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
+
+  //
+
   return (
     <>
       <AppBar
@@ -17,7 +55,7 @@ const Header = () => {
         }}
       >
         <Toolbar>
-          <Grid
+          {/* <Grid
             item
             xs={12}
             md={8}
@@ -29,35 +67,123 @@ const Header = () => {
               mx: "auto",
             }}
           >
-            <ul>
-              <li>
-                <Link to={"/"}>Home</Link>
-              </li>
-              <li>
-                <Link to={"/portfolio"}>Portfolio</Link>
-              </li>
-              <li>
-                <Link to={"/resume"}>Resume</Link>
-              </li>
-              {/* <li>
-            <Link to={"/edit/:id"}>Edit</Link>
-          </li> */}
-            </ul>
-            <a
-              href="https://github.com/thomas-white-ucf"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Links />
+          </Grid> */}
+
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+          >
+            Thomas James White
+          </Typography>
+
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
             >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/thomas-white-engineering/"
-              target="_blank"
-              rel="noopener noreferrer"
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
             >
-              LinkedIn
-            </a>
-          </Grid>
+              {/* {pages.map((page) => (
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page}</Typography>
+                </MenuItem>
+              ))} */}
+
+              <MenuItem onClick={handleCloseNavMenu}>
+                {/* <Link
+                  component="button"
+                  variant="body2"
+                  
+                >
+                  Button Link
+                </Link> */}
+                <Links />
+              </MenuItem>
+            </Menu>
+          </Box>
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+          >
+            Thomas James White
+          </Typography>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            <Links />
+
+            {/* {pages.map((page) => (
+              <Button
+                key={page}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                {page}
+              </Button>
+            ))} */}
+          </Box>
+
+          <Box sx={{ flexGrow: 0 }}>
+            <Tooltip title="Open settings">
+              <IconButton
+                onClick={handleOpenUserMenu}
+                sx={{ p: 1, backgroundColor: "white" }}
+              >
+                {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" /> */}
+                <Typography>Connect</Typography>
+              </IconButton>
+            </Tooltip>
+            <Menu
+              sx={{ mt: "45px" }}
+              id="menu-appbar"
+              anchorEl={anchorElUser}
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              open={Boolean(anchorElUser)}
+              onClose={handleCloseUserMenu}
+            >
+              {/* {settings.map((setting) => (
+                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center">{setting}</Typography>
+                </MenuItem>
+              ))} */}
+              <MenuItem>
+                <ConnectLinks />
+              </MenuItem>
+            </Menu>
+          </Box>
         </Toolbar>
       </AppBar>
     </>

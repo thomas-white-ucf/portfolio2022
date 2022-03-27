@@ -1,10 +1,9 @@
-import React from "react";
-
+import { Grid } from "@mui/material";
 import thomasLogo from "../../assets/images/thomasLogo.jpeg";
 
 const HomePage = () => {
   return (
-    <div>
+    <Grid item xs={12}>
       <img src={thomasLogo} alt="Thomas White" height="200px" width="200px" />
       <p>
         After graduating from UCF Mechanical Engineering in 2015, I performed
@@ -25,7 +24,7 @@ const HomePage = () => {
         I've enjoyed traveling to ~44 States, The Bahamas, Mexico, Puerto Rico,
         U.S. Virgin Islands, Peru, Germany and Japan.
       </p>
-    </div>
+    </Grid>
   );
 };
 

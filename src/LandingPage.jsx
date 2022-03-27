@@ -3,7 +3,7 @@ import { Layout } from "./components/layout";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/pages/HomePage";
 import ResumePage from "./components/pages/ResumePage";
-import ProjectDisplayPage from "./components/pages/ProjectDisplayPage";
+import PortfolioPage from "./components/pages/PortfolioPage";
 
 //
 
@@ -12,7 +12,8 @@ const LandingPage = () => {
     <Layout>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="portfolio" element={<ProjectDisplayPage />} />
+        <Route path="/portfolio2022" element={<HomePage />} />
+        <Route path="portfolio" element={<PortfolioPage />} />
         <Route path="resume" element={<ResumePage />} />
       </Routes>
     </Layout>

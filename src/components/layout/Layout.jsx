@@ -4,6 +4,8 @@ import { Header, Footer } from "./index";
 import { Grid } from "@mui/material";
 //
 
+import whiteWaveImage from "../../assets/images/white-waves.png";
+
 const Layout = ({ children }) => {
   return (
     <main role="main">
@@ -13,12 +15,10 @@ const Layout = ({ children }) => {
           item
           sx={{
             color: "primary.main",
-            // background: "linear-gradient(#5D17FE, #5D17FE, #5D17FE, #1A122B)",
-            // bgcolor: "#5D17FE",
+            backgroundImage: `url(${whiteWaveImage})`,
             border: 3,
             borderRadius: 3,
-            // borderColor: "primary.main",
-            minWidth: "320px",
+            minWidth: "100%",
           }}
         >
           {/* //! MAIN CONTENT 
@@ -29,18 +29,21 @@ const Layout = ({ children }) => {
               display: "flex",
               flexDirection: "column",
               minHeight: "100vh",
+              mx: "auto",
             }}
           >
             {/* //! - MAIN - - - - - */}
             <Grid container>
               {/* //! - HEADER - - - - */}
-              <Grid item xs={12} mb={5}>
+              <Grid item xs={12} mb={10}>
                 <Header />
               </Grid>
 
-              <Grid item md={10} xs={12}>
+              <Grid item xs={12} md={10}>
+                <Grid item xs={1}></Grid>
                 <Grid
                   item
+                  xs={10}
                   sx={{
                     p: 2,
                     mx: "auto",
@@ -52,6 +55,7 @@ const Layout = ({ children }) => {
                 >
                   {children}
                 </Grid>
+                <Grid item xs={1}></Grid>
               </Grid>
             </Grid>
           </Grid>
