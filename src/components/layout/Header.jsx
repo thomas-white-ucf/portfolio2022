@@ -1,109 +1,74 @@
 import React from "react";
+import { AppBar, Grid, Toolbar } from "@mui/material";
+import { Link } from "react-router-dom";
+// import Typography from "@mui/material/Typography";
+// import Box from "@mui/material/Box";
 
 const Header = () => {
   return (
-    
-      <nav>
-        <a href="#">Thomas White</a>
-
-        {/* <button
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span></span>
-        </button> */}
-
-        <div id="navbarSupportedContent">
-          <ul>
-            <li>
-              <a href="index.html" target="_blank" rel="noopener noreferrer">
-                About <span>(current)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="portfolio.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a href="resume.html" target="_blank" rel="noopener noreferrer">
-                Resume
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/thomas-white-ucf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://www.linkedin.com/in/thomas-white-engineering/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-
-              <div aria-labelledby="navbarDropdown">
-                <a href="index.html" target="_blank" rel="noopener noreferrer">
-                  About
-                </a>
-                <a
-                  href="portfolio.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Portfolio
-                </a>
-                <a href="resume.html" target="_blank" rel="noopener noreferrer">
-                  Resume
-                </a>
-                <a
-                  href="https://github.com/thomas-white-ucf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/thomas-white-engineering/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <>
+      <AppBar
+        sx={{
+          // mb:0,
+          // pb:0,
+          position: "fixed",
+          zIndex: (theme) => theme.zIndex.drawer + 1,
+          // background: "linear-gradient(#d3d3d3, #5D17FE, #5D17FE, #5D17FE)",
+        }}
+      >
+        <Toolbar>
+          <Grid
+            item
+            xs={12}
+            md={8}
+            lg={6}
+            sx={{
+              flexGrow: 1,
+              flexWrap: "wrap",
+              display: "flex",
+              mx: "auto",
+            }}
+          >
+            <ul>
+              <li>
+                <Link to={"/"}>Home</Link>
+              </li>
+              <li>
+                <Link to={"/portfolio"}>Portfolio</Link>
+              </li>
+              <li>
+                <Link to={"/resume"}>Resume</Link>
+              </li>
+              {/* <li>
+            <Link to={"/edit/:id"}>Edit</Link>
+          </li> */}
+            </ul>
+            <a
+              href="https://github.com/thomas-white-ucf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/thomas-white-engineering/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </Grid>
+        </Toolbar>
+      </AppBar>
+    </>
   );
 };
 
 export default Header;
+
+// target = "_blank";
+// rel = "noopener noreferrer";
+// target = "_blank";
+// rel = "noopener noreferrer";
+// target = "_blank";
+// rel = "noopener noreferrer";

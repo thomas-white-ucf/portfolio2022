@@ -1,9 +1,9 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import MainComponent from "./MainComponent";
+import Layout from "./Layout";
 
 export {
   Header,
   Footer,
-  MainComponent,
+  Layout,
 };
