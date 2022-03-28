@@ -49,6 +49,7 @@ const Layout = ({ children }) => {
                     rowSpacing: 1,
                     columnSpacing: 2,
                     borderRadius: 3,
+                    display: "flex",
                   }}
                 >
                   {children}

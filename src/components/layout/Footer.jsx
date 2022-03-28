@@ -14,16 +14,16 @@ const Footer = () => {
           },
         }}
       >
-        <Typography variant="body2">
-          <Link color="inherit" href="mailto:thomas.white.ucf@gmail.com">
-            <Typography href="mailto:thomas.white.ucf@gmail.com">
-              Thomas.white.ucf@gmail.com
-            </Typography>{" "}
-            {"Copyright © "}
-            {new Date().getFullYear()}
-            {"."}
-          </Link>{" "}
-        </Typography>
+        {/* <Typography variant="body2"> */}
+        <Link color="inherit" href="mailto:thomas.white.ucf@gmail.com">
+          <Typography href="mailto:thomas.white.ucf@gmail.com">
+            Thomas.white.ucf@gmail.com
+          </Typography>{" "}
+          {"Copyright © "}
+          {new Date().getFullYear()}
+          {"."}
+        </Link>{" "}
+        {/* </Typography> */}
       </Box>
     </>
   );

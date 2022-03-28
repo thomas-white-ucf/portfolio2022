@@ -50,7 +50,7 @@ const Header = () => {
           // mb:0,
           // pb:0,
           position: "fixed",
-          zIndex: (theme) => theme.zIndex.drawer + 1,
+          // zIndex: (theme) => theme.zIndex.drawer + 1,
           // background: "linear-gradient(#d3d3d3, #5D17FE, #5D17FE, #5D17FE)",
         }}
       >

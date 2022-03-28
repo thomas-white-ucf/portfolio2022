@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 
 const ConnectLinks = () => {
   return (
@@ -19,13 +19,13 @@ const ConnectLinks = () => {
             Contact
           </Typography>
         </Link> */}
-        <a
+        <Button
           href="https://github.com/thomas-white-ucf"
           target="_blank"
           rel="noopener noreferrer"
         >
           GitHub
-        </a>
+        </Button>
       </Box>
       <Box
         sx={{
@@ -37,13 +37,13 @@ const ConnectLinks = () => {
           borderColor: "whitesmoke",
         }}
       >
-        <a
+        <Button
           href="https://www.linkedin.com/in/thomas-white-engineering/"
           target="_blank"
           rel="noopener noreferrer"
         >
           LinkedIn
-        </a>
+        </Button>
       </Box>
     </>
   );

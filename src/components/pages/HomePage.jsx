@@ -4,44 +4,59 @@ import thomasLogo from "../../assets/images/thomasLogo.jpeg";
 const HomePage = () => {
   return (
     <Grid item xs={12}>
-      <Box sx={{ display: "flex", flexDirection: "column" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          overFlow: "auto",
+          flexDirection: "column",
+        }}
+      >
         <Box
           sx={{
+            display: "flex",
             alignContent: "center",
-            ml: "auto",
-            border: 1,
+            // ml: "auto",
+            // border: 1,
             borderRadius: 1,
-            background: "black"
+            background: "whitesmoke",
+            p: 1,
+            m: 1,
           }}
         >
-          <img
-            src={thomasLogo}
-            alt="Thomas White"
-            height="200px"
-            width="200px"
-          />
+          <Box>
+            <Typography variant="h4" gutterBottom>
+              Thomas White
+            </Typography>
+            <Typography variant="subtitle" gutterBottom>
+              After graduating from UCF Mechanical Engineering in 2015, I
+              performed Facility Condition Assessments and constructed Cost
+              Estimates with Nelson Engineering Company. October 2017, I started
+              contracting independently and thereafter founded my consulting
+              company White Engineering LLC in 2018.
+            </Typography>
+            <hr />
+            <Typography variant="subtitle" gutterBottom>
+              While assisting Professional Estimators as White Engineering's
+              Owner and sole employee, I returned to the University of Central
+              Florida to attend the Full Stack Web Development Bootcamp.
+            </Typography>
+            <hr />
+            <Typography variant="subtitle" gutterBottom>
+              I completed an Appalachian Trail through-hike in 2021, after 2193.1 miles. <br/>
+              Also, I have enjoyed traveling to ~44 States, The Bahamas, Mexico, Puerto Rico,
+              U.S. Virgin Islands, Peru, Germany and Japan.
+            </Typography>
+          </Box>
+          <Box sx={{ p: 1, m: 1 }}>
+            <img
+              src={thomasLogo}
+              alt="Thomas White"
+              height="200px"
+              width="200px"
+            />
+          </Box>
         </Box>
-
-        <Typography>
-          After graduating from UCF Mechanical Engineering in 2015, I performed
-          Facility Condition Assessments and building Cost Estimates. October
-          2017 I started contracting independently and assessed damage resulting
-          from Hurricanes Irma and Maria in the U.S. Virgin Islands. Currently I
-          am enrolled in UCF Coding Full Stack Development Bootcamp.
-        </Typography>
-        <Typography>
-          In total I have assessed 25+ million square feet of commercial,
-          government and residential facilities. This led me to start White
-          Engineering LLC. I help construct cost estimates for renovations and
-          developing projects. Located in Central Florida, I am able to consult
-          large commercial developments and Orlando's themed entertainment
-          industry.
-        </Typography>
-        <Typography>
-          In 2021, I completed an Appalachian Trail through-hike. I've enjoyed
-          traveling to ~44 States, The Bahamas, Mexico, Puerto Rico, U.S. Virgin
-          Islands, Peru, Germany and Japan.
-        </Typography>
       </Box>
     </Grid>
   );
