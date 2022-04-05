@@ -6,7 +6,6 @@ import marvelPic from "../images/ReactMarvel.png";
 import workoutPic from "../images/workout.jpeg";
 import snowPingPic from "../images/snowPingPic.png";
 
-
 const myProjects = [
   {
     id: "Snow Ping",

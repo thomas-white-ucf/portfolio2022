@@ -6,7 +6,7 @@ const PortfolioPage = () => {
 
   return (
     <Grid item xs={12}>
-      <Box sx={{ display: "flex", flexDirection: "column" }}>
+      <Box>
         <Typography variant="h4">Projects</Typography>
         <ProjectCard />
       </Box>

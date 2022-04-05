@@ -15,7 +15,11 @@ const ProjectCard = () => {
   //
 
   return (
-    <Grid item xs={12}>
+    <Grid
+      item
+      xs={12}
+      // sx={{ display: "flex", flexDirection: "column" }}
+    >
       {/* sx={{ backgroundColor: "white", minHeight: 200 }} */}
       <Box
         sx={{
@@ -27,18 +31,27 @@ const ProjectCard = () => {
           mx: "auto",
           p: 1,
           m: 1,
+          // minWidth: "140px",
         }}
       >
         {/* , src, alt, href */}
 
         {myProjects.map(({ id, alt, src, href }) => (
-          <Card key={id} sx={{ mx: "auto", m: 1, backgroundColor: "#6fdcff" }}>
+          <Card
+            key={id}
+            sx={{
+              mx: "auto",
+              m: 1,
+              backgroundColor: "#6fdcff",
+              maxWidth: "140px",
+            }}
+          >
             {/* minWidth: 150, minHeight: 150, */}
             <CardContent>
               <CardMedia
                 component="img"
                 height="140px"
-                // width="140px"
+                width="140px"
                 image={src}
                 alt={alt}
               />
@@ -52,9 +65,7 @@ const ProjectCard = () => {
             </CardContent>
             <CardActions>
               <Button size="medium" href={href}>
-                {/* <Box sx={{ backgroundColor: "#6fdcff" }}> */}
-                {id}
-                {/* </Box> */}
+                <Box sx={{ backgroundColor: "whitesmoke" }}>{id}</Box>
               </Button>
             </CardActions>
           </Card>

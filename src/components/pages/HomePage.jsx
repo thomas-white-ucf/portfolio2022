@@ -6,28 +6,63 @@ const HomePage = () => {
     <Grid item xs={12}>
       <Box
         sx={{
-          display: "flex",
-          flexWrap: "wrap",
+          // display: "flex",
+          // flexWrap: "wrap",
           overFlow: "auto",
           flexDirection: "column",
         }}
       >
         <Box
           sx={{
-            display: "flex",
+            p: 1,
+            m: 1,
+            borderRadius: 2,
+            border: 2,
+            backgroundColor: "#556cd6",
+            // maxWidth: "50%",
+            // minWidth: "220px",
+            // display: "flex",
+            display: "inline-flex",
+            // flexWrap: "wrap",
+            // display: "block"
+          }}
+        >
+          <img
+            src={thomasLogo}
+            alt="Thomas White"
+            height="200px"
+            width="200px"
+          />
+        </Box>
+        <Box
+          sx={{
+            // display: "inline-flex",
             alignContent: "center",
             // ml: "auto",
             // border: 1,
             borderRadius: 1,
             background: "whitesmoke",
-            p: 1,
-            m: 1,
+            // p: 1,
+            // m: 1,
           }}
         >
-          <Box>
+          <Box
+            sx={{
+              backgroundColor: "#556cd6",
+              color: "white",
+              p: 2,
+              m: 1,
+              borderRadius: 2,
+            }}
+          >
             <Typography variant="h4" gutterBottom>
               Thomas White
             </Typography>
+            <hr />
+            <Typography variant="h6" gutterBottom>
+              MERN Full Stack Developer
+            </Typography>
+            <hr />
             <Typography variant="subtitle" gutterBottom>
               After graduating from UCF Mechanical Engineering in 2015, I
               performed Facility Condition Assessments and constructed Cost
@@ -43,18 +78,11 @@ const HomePage = () => {
             </Typography>
             <hr />
             <Typography variant="subtitle" gutterBottom>
-              I completed an Appalachian Trail through-hike in 2021, after 2193.1 miles. <br/>
-              Also, I have enjoyed traveling to ~44 States, The Bahamas, Mexico, Puerto Rico,
-              U.S. Virgin Islands, Peru, Germany and Japan.
+              After 2193.1 miles in 2021, I completed an Appalachian Trail
+              through-hike. <br />
+              Also, I have enjoyed traveling to ~44 States, The Bahamas, Mexico,
+              Puerto Rico, U.S. Virgin Islands, Peru, Germany and Japan.
             </Typography>
-          </Box>
-          <Box sx={{ p: 1, m: 1 }}>
-            <img
-              src={thomasLogo}
-              alt="Thomas White"
-              height="200px"
-              width="200px"
-            />
           </Box>
         </Box>
       </Box>
